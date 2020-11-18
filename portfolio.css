@@ -1,0 +1,58 @@
+.top-padding
+{
+	height: 20px;
+}
+
+
+
+
+
+/*Scrollbar CSS obtained from this site/link: https://codepen.io/GhostRider/pen/GHaFw and modified by me*/
+.scrollbar
+{
+	height: 400px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	width: 1000px;
+	margin: auto;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/*End of scrollbar CSS*/
+
+
+.resume
+{
+	background-color: #F5F5F5;
+	width: 50%;
+	padding: 10px;
+}

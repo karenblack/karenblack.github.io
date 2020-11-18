@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Karen Black - Hobbies</title>
+	<!-- Bootstrap stylesheet for navbar -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+    <script type="text/javascript" src= "portfolio.js"></script>
+</head>
+<body>
+
+<!-- navbar obtained from Boostrap navbar documentation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="homepage.html">Karen N. Black</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hobbies.html">Hobbies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume/Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class = "top-padding"></div>
+
+<!-- Scrollbar html obtained from the following site: https://codepen.io/GhostRider/pen/GHaFw -->
+<div id="wrapper" class = "container-fluid">
+    <div class="scrollbar" id="style-1">
+      <div class="force-overflow">
+      <h3>Running</h3>
+      <p>Bacon ipsum dolor amet meatball tail jerky turducken short ribs ball tip kielbasa alcatra swine cupim ground round picanha boudin pig ribeye. Chislic pork ball tip pastrami sirloin pork belly meatball prosciutto bresaola. Ribeye t-bone andouille, shoulder chicken pork belly ball tip jerky tri-tip short loin cow. Meatloaf drumstick biltong, boudin alcatra porchetta meatball tongue prosciutto short loin turducken leberkas. Biltong pork chop chuck turkey pig porchetta pastrami kevin jerky drumstick rump. Rump bresaola tenderloin ground round short ribs biltong shoulder buffalo beef ribs pork loin flank kevin corned beef. Andouille turducken swine kielbasa pancetta meatball.</p><br>
+
+      <h3>Baking</h3>
+      <p>Salami brisket flank rump cupim pastrami cow beef turkey prosciutto capicola filet mignon. Meatball shankle rump chicken salami picanha biltong leberkas landjaeger meatloaf corned beef turducken. Tail ribeye chicken picanha tongue. Rump chicken strip steak, pork belly drumstick porchetta andouille tail short ribs flank picanha. Pancetta doner capicola pork loin shankle boudin. Shoulder alcatra ball tip, shankle flank tenderloin buffalo capicola cow andouille turkey cupim biltong. Ham hock pork loin sausage, flank porchetta swine ground round hamburger biltong burgdoggen meatloaf corned beef bacon.</p><br>
+
+      <h3>Traveling</h3>
+      <p>Pancetta strip steak picanha corned beef shoulder t-bone. Shank short loin kevin, strip steak prosciutto pork loin swine pork brisket sausage frankfurter. Short loin rump pork chop cow, burgdoggen porchetta landjaeger ground round chicken strip steak pastrami chuck corned beef. Burgdoggen prosciutto cow, cupim short ribs spare ribs sirloin pork loin pancetta beef ribs fatback capicola. Shank filet mignon jowl, pastrami boudin biltong tenderloin kielbasa. Short ribs ground round pork chop ribeye t-bone leberkas boudin.</p><br>
+      </div>
+    </div>
+</div>
+
+<div class = "container-fluid">
+  <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post" target = "_blank" id = "form">
+      <fieldset>
+          <legend>Tell Me About Your Hobbies</legend>
+          <fieldset>
+            <p> About You: </p>
+              <label> Gender
+                <input type="text" name="gender" size="30" maxlength="100"></label> <br>
+              <label> Age
+                <input type="text" name="age" size="30" maxlength="100"></label> <br>
+              <label> Country of Residence
+                <input type="text" name="country" size="30" maxlength="100"></label> <br>
+          </fieldset>
+          <br/>
+            <fieldset>
+                <p> Select Your Favorite Hobbies: </p>
+                    <label>
+                        <input type="checkbox" name="hobbyA" value="outdoors"> Outdoor Activities</label><br>
+                    <label>
+                        <input type="checkbox" name="hobbyB" value="kitchen"> Cooking and/or Baking</label><br>
+                    <label>
+                        <input type="checkbox" name="hobbyC" value="entertainment"> Entertainment (movies, videogames, etc...)</label><br>
+                    <label>Other:
+                        <input type="text" name="hobbyD" size = "30" maxlength="100"></label> <br>
+                
+                <input type="submit" class = "btn btn-success" onsubmit= "myFunction()" value ="Submit">
+            </fieldset>
+      </fieldset>
+  </form>
+</div>
+
+
+
+
+<!-- Bootstrap scripts for other features -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+
+</body>
+</html>
