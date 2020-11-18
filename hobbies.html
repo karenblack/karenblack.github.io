@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Karen Black - Hobbies</title>
+	<!-- Bootstrap stylesheet for navbar -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+    <script type="text/javascript" src= "portfolio.js"></script>
+</head>
+<body>
+
+<!-- navbar obtained from Boostrap navbar documentation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Karen N. Black</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="hobbies.html">Hobbies <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume/Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class = "top-padding"></div>
+
+<!-- Scrollbar html obtained from the following site: https://codepen.io/GhostRider/pen/GHaFw -->
+<div id="wrapper" class = "container-fluid">
+    <div class="scrollbar" id="style-1">
+      <div class="force-overflow">
+      <h3>Running</h3>
+      <p>I enjoy distance running and find it soothing and meditative. It's a way to clear my head and focus my thoughts. I've raced distances from the mile to a full marathon. My favorite distance to race is the half marathon. It is relatively easy to train for while still maintaining a working schedule. To me, the half marathon is also the perfect distance to race and not feel completely burnt-out by the end of the race. Future running goals include running a Boston Qualifying Marathon time and running a 50K trail race. Check out my race records on <a href = "https://www.athlinks.com/athletes/319757584/statistics" target="_blank"> Athlinks</a>!</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/hobbies/halfmarathon.jpg" alt="Race" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/hobbies/10K.jpg" alt="Award" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/hobbies/houhalf.jpg" alt="Race2" style="width:100%">
+        </div>
+      </div>
+      <br>
+
+      <h3>Baking</h3>
+      <p>When I have downtown I really enjoy baking. I find this actively perfectly combines science and creativity. There is certainly a scientific element in combining various ingredients in just the right amounts to reach desired textures and flavors. Simultaneously, baking contains a creative element in being free to express your interests through flavor profiles and decorations.</p>
+
+      <div class="row">
+        <div class="column">
+          <img src="images/hobbies/souffle.jpg" alt="Souffle" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/hobbies/cake.jpg" alt="Cake" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/hobbies/pickle.jpg" alt="Pickles" style="width:100%">
+        </div>
+      </div>
+      <br>
+
+      <h3>Traveling</h3>
+      <p>
+        This hobby is likely one I share with many other. The world is such a large and exicting place and my goal is to experience as much of it as I can. I've been lucky to visit places across the United States, Caribbean, Europe, and southeast Asia. Some of my favorite places I've visted so far include Turkey and Iceland. My goal is to visit every continent (still need to vist South America, Africa, and Antarctica) and as many countries as I can. </p>
+
+        <div class="row">
+          <div class="column">
+            <img src="images/hobbies/iceland.jpg" alt="Iceland" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="images/hobbies/zion.jpg" alt="Zion" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="images/hobbies/amasya.jpg" alt="Amasya" style="width:100%">
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+<div class = "container-fluid">
+  <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post" target = "_blank" id = "form">
+      <fieldset>
+          <legend>Tell Me About Your Hobbies</legend>
+          <fieldset>
+            <p> About You: </p>
+              <label> Gender
+                <input type="text" name="gender" size="30" maxlength="100"></label> <br>
+              <label> Age
+                <input type="text" name="age" size="30" maxlength="100"></label> <br>
+              <label> Country of Residence
+                <input type="text" name="country" size="30" maxlength="100"></label> <br>
+          </fieldset>
+          <br/>
+            <fieldset>
+                <p> Select Your Favorite Hobbies: </p>
+                    <label>
+                        <input type="checkbox" name="hobbyA" value="outdoors"> Outdoor Activities</label><br>
+                    <label>
+                        <input type="checkbox" name="hobbyB" value="kitchen"> Cooking and/or Baking</label><br>
+                    <label>
+                        <input type="checkbox" name="hobbyC" value="entertainment"> Entertainment (movies, videogames, etc...)</label><br>
+                    <label>Other:
+                        <input type="text" name="hobbyD" size = "30" maxlength="100"></label> <br>
+                
+                <input type="submit" class = "btn btn-success" onsubmit= "myFunction()" value ="Submit">
+            </fieldset>
+      </fieldset>
+  </form>
+</div>
+
+
+
+
+<!-- Bootstrap scripts for other features -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+
+</body>
+</html>
