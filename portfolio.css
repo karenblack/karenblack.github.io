@@ -1,19 +1,60 @@
+/*********************/
 /*CSS for area under navbar*/
+/*********************/
 .top-padding
 {
 	height: 20px;
 }
 
+/*********************/
+/*CSS for caurosel*/
+/*********************/
 
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto
+}
 
+.mySlides {
+  display: flex;
+  height: 400px;
+     
+}
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
+.next {
+    right: 50px;
+    border-radius: 3px 0px 0px 3px
+}
+
+.prev {
+    left: 50px;
+    border-radius: 3px 0 0 3px
+}
+
+/*********************/
 /*Scrollbar CSS obtained from this site/link: https://codepen.io/GhostRider/pen/GHaFw and modified by me*/
+/*********************/
 .scrollbar
 {
-	height: 500px;
+	height: 500px;				/* height of the element box that I want the content to fill and 'overflow'*/
 	background: #F5F5F5;
-	overflow-y: scroll;
+	overflow-y: scroll;			/* overflow content is clipped and a scroll-bar is added*/
 	margin-bottom: 25px;
 }
 
@@ -24,7 +65,7 @@
 
 #wrapper
 {
-	width: 90%;
+	width: 90%;					/* this element box will occupy 90% of the webpage*/
 	margin: auto;
 }
 
@@ -48,13 +89,14 @@
 	background-color: #555;
 }
 
-/*End of scrollbar CSS*/
 
-/* CSS for hobbies imges, inspired by W3 schools https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 
+/*********************/
+/* CSS for hobbies images, inspired by W3 schools https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
+/*********************/
 .column {
-  float: left;
-  width: 33.33%;
+  float: left;				/* float the images to the left of one another*/
+  width: 33.33%;			/* image will occupy 33.33% of the element space*/
   padding: 5px;
 }
 
@@ -65,8 +107,9 @@
   display: table;
 }
 
-
+/*********************/
 /*CSS for Resume page*/
+/*********************/
 .resume
 {
 	background-color: #F5F5F5;
